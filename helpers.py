@@ -9,4 +9,4 @@ def get_info(query):
     lines = f.readlines()
     for line in lines:
         if line.startswith(query):
-            return(line)
+            return(line.split(":")[-1])
